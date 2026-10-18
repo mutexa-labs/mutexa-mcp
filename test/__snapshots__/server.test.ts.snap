@@ -1,0 +1,551 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`mutexa MCP server > keeps the tool schemas stable 1`] = `
+[
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "Live Hyperliquid perp markets sorted by 24h volume: mark price, 24h change, volume, open interest, hourly funding and its annualised rate, max leverage, size decimals and margin tiers (notional bound and max leverage per tier). Filter by coins or take the top N.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "coins": {
+          "description": "Only these markets",
+          "items": {
+            "description": "Hyperliquid perp market name, for example BTC, ETH, kPEPE",
+            "pattern": "^[A-Za-z0-9:_-]{1,32}$",
+            "type": "string",
+          },
+          "maxItems": 50,
+          "type": "array",
+        },
+        "limit": {
+          "description": "Most markets to return when no coins are given (default 20)",
+          "maximum": 300,
+          "minimum": 1,
+          "type": "integer",
+        },
+      },
+      "type": "object",
+    },
+    "name": "hl_markets",
+    "title": "Hyperliquid perp markets",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "Open perp positions of any public Hyperliquid address: side, size, entry, mark, value, leverage, margin mode, margin and unrealized PnL, with the liquidation price Hyperliquid reports next to the one computed from the position's own state (isolated positions only; cross margin depends on the whole account, so computedLiq is null).",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "address": {
+          "description": "Public Hyperliquid account address (0x…, 42 characters)",
+          "pattern": "^0x[0-9a-fA-F]{40}$",
+          "type": "string",
+        },
+      },
+      "required": [
+        "address",
+      ],
+      "type": "object",
+    },
+    "name": "hl_positions",
+    "title": "Hyperliquid positions of an address",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "Liquidation price of a fresh isolated Hyperliquid perp position (kind=perp: side, entry, size in coins, isolated margin in USD, and either coin to use that market's live margin tiers or maxLeverage for a single tier), or of a single-collateral, single-debt Aave V3 loan in standard mode (kind=loan: collateral amount, debt in USD, collateral price, liquidation threshold). Uses Hyperliquid's documented formula and Aave's health factor.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "coin": {
+          "description": "perp: market whose live margin tiers to use",
+          "pattern": "^[A-Za-z0-9:_-]{1,32}$",
+          "type": "string",
+        },
+        "collateral": {
+          "description": "loan: collateral amount in tokens",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "debtUsd": {
+          "description": "loan: debt in USD",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "entry": {
+          "description": "perp: entry price",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "kind": {
+          "enum": [
+            "perp",
+            "loan",
+          ],
+          "type": "string",
+        },
+        "liqThreshold": {
+          "description": "loan: liquidation threshold, 0..1",
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "margin": {
+          "description": "perp: isolated margin in USD",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "maxLeverage": {
+          "description": "perp: max leverage for a single tier, instead of coin",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "price": {
+          "description": "loan: collateral price in USD",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "side": {
+          "description": "Position side",
+          "enum": [
+            "long",
+            "short",
+          ],
+          "type": "string",
+        },
+        "size": {
+          "description": "perp: size in coins",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+      },
+      "required": [
+        "kind",
+      ],
+      "type": "object",
+    },
+    "name": "liq_price",
+    "title": "Liquidation price",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "Split one Hyperliquid perp position into isolated slices whose liquidation prices form a band instead of one public line. Placement 'around' keeps the same capital as one position; 'beyond' puts no slice closer to price than the single position (more margin). Give slices, or alertThreshold to size every slice under your alert threshold. Optional cost preview when feeRate and accountCost are given. Uses the market's live margin tiers and mark.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "accountCost": {
+          "description": "Your cost per extra account in USD",
+          "minimum": 0,
+          "type": "number",
+        },
+        "alertThreshold": {
+          "description": "Your alert threshold in USD; sets the slice count when slices is not given",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "band": {
+          "description": "Leverage stagger across slices, 0..1",
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number",
+        },
+        "coin": {
+          "description": "Hyperliquid perp market name, for example BTC, ETH, kPEPE",
+          "pattern": "^[A-Za-z0-9:_-]{1,32}$",
+          "type": "string",
+        },
+        "entry": {
+          "description": "Entry price (default: current mark)",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "feeRate": {
+          "description": "Your venue fee rate per fill, for example 0.00045",
+          "maximum": 0.01,
+          "minimum": 0,
+          "type": "number",
+        },
+        "leverage": {
+          "description": "Target leverage of the whole position",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "notional": {
+          "description": "Total position size in USD",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "placement": {
+          "enum": [
+            "around",
+            "beyond",
+          ],
+          "type": "string",
+        },
+        "seed": {
+          "description": "Seed for the size variation (default 1)",
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer",
+        },
+        "side": {
+          "description": "Position side",
+          "enum": [
+            "long",
+            "short",
+          ],
+          "type": "string",
+        },
+        "sizeJitter": {
+          "description": "Size variation across slices, 0..1 (default 0: equal sizes)",
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number",
+        },
+        "slices": {
+          "description": "Number of slices",
+          "maximum": 64,
+          "minimum": 1,
+          "type": "integer",
+        },
+      },
+      "required": [
+        "coin",
+        "side",
+        "notional",
+        "leverage",
+        "placement",
+        "band",
+      ],
+      "type": "object",
+    },
+    "name": "plan_ladder",
+    "title": "Plan a liquidation ladder",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "Split one Aave V3 loan (one collateral, one debt, standard mode) into loans with staggered LTV so their liquidation prices form a band. Give collateralSymbol to use the live reserve (LTV, liquidation threshold, oracle price; needs MUTEXA_ETH_RPC), or ltv, liqThreshold and priceUsd to plan offline. Reports the band, extra collateral and whether the single loan is above max LTV.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "band": {
+          "description": "LTV stagger across loans, 0..1",
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number",
+        },
+        "collateralAmount": {
+          "description": "Collateral in tokens",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "collateralSymbol": {
+          "description": "Aave V3 Ethereum reserve symbol, for example WETH",
+          "maxLength": 32,
+          "minLength": 1,
+          "type": "string",
+        },
+        "debtUsd": {
+          "description": "Debt in USD",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "liqThreshold": {
+          "description": "Liquidation threshold, 0..1 (offline mode)",
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "loans": {
+          "description": "Number of loans",
+          "maximum": 32,
+          "minimum": 1,
+          "type": "integer",
+        },
+        "ltv": {
+          "description": "Max LTV for new borrows, 0..1 (offline mode)",
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "placement": {
+          "enum": [
+            "around",
+            "beyond",
+          ],
+          "type": "string",
+        },
+        "priceUsd": {
+          "description": "Collateral price in USD (offline mode)",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "seed": {
+          "description": "Seed for the size variation (default 1)",
+          "maximum": 9007199254740991,
+          "minimum": -9007199254740991,
+          "type": "integer",
+        },
+        "sizeJitter": {
+          "description": "Size variation across loans, 0..1 (default 0)",
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number",
+        },
+      },
+      "required": [
+        "collateralAmount",
+        "debtUsd",
+        "loans",
+        "band",
+        "placement",
+      ],
+      "type": "object",
+    },
+    "name": "plan_loans",
+    "title": "Plan a loan ladder",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "Risk parameters of every Aave V3 Ethereum reserve at one block: max LTV, liquidation threshold, liquidation bonus, collateral and borrow flags, frozen and paused state, and the AaveOracle price. The data provider and oracle are resolved from the PoolAddressesProvider, and nothing is reported if it no longer points at the expected Pool. Needs MUTEXA_ETH_RPC.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "symbols": {
+          "description": "Only these reserve symbols",
+          "items": {
+            "maxLength": 32,
+            "minLength": 1,
+            "type": "string",
+          },
+          "maxItems": 100,
+          "type": "array",
+        },
+      },
+      "type": "object",
+    },
+    "name": "aave_reserves",
+    "title": "Aave V3 Ethereum reserves",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": false,
+      "readOnlyHint": true,
+    },
+    "description": "How easily a set of slices could be clustered by an observer, 0 (hard to link) to 100 (easy), with every factor that added points and its suggested fix: slice count, size spread, leverage spread, timing jitter, fresh accounts, private funding and slices above your alert threshold. A heuristic documented in the linkability spec, not a statistical guarantee.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "alertThreshold": {
+          "description": "Your alert threshold in USD",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "freshAccounts": {
+          "description": "No account was used before this position",
+          "type": "boolean",
+        },
+        "jitter": {
+          "description": "Timing spread of the openings",
+          "enum": [
+            "off",
+            "light",
+            "heavy",
+          ],
+          "type": "string",
+        },
+        "leverages": {
+          "description": "Leverage per slice",
+          "items": {
+            "exclusiveMinimum": 0,
+            "type": "number",
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array",
+        },
+        "privateFunding": {
+          "description": "No slice was funded from a wallet visible to the others",
+          "type": "boolean",
+        },
+        "slices": {
+          "description": "Notional per slice in USD",
+          "items": {
+            "exclusiveMinimum": 0,
+            "type": "number",
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array",
+        },
+      },
+      "required": [
+        "slices",
+        "leverages",
+        "jitter",
+        "freshAccounts",
+        "privateFunding",
+        "alertThreshold",
+      ],
+      "type": "object",
+    },
+    "name": "linkability_score",
+    "title": "Linkability score",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "What public trackers see for any Hyperliquid address: every open position sorted by closest liquidation (side, size, value, leverage, isolated or cross, entry, mark, liquidation price, distance, uPnL), flags for positions above your alert threshold, and optionally a re-plan of each position into isolated slices placed beyond today's liquidation price. Same JSON as the tracker-view CLI.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "address": {
+          "description": "Public Hyperliquid account address (0x…, 42 characters)",
+          "pattern": "^0x[0-9a-fA-F]{40}$",
+          "type": "string",
+        },
+        "replan": {
+          "description": "Also re-plan each position into a band of slices",
+          "type": "boolean",
+        },
+        "threshold": {
+          "description": "Your alert threshold in USD: positions worth more are flagged. There is no default.",
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+      },
+      "required": [
+        "address",
+        "threshold",
+      ],
+      "type": "object",
+    },
+    "name": "tracker_view",
+    "title": "Tracker view of an address",
+  },
+  {
+    "_meta": undefined,
+    "annotations": {
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true,
+      "readOnlyHint": true,
+    },
+    "description": "Where the largest Hyperliquid accounts get liquidated on one coin: ranks the leaderboard by 30-day volume or account value, reads the public positions of the top accounts (at most 100), and buckets their notional by liquidation price around the mark (longs below, shorts above). Totals reconcile: in range + outside + no liquidation price = total. The leaderboard is the file the Hyperliquid web app loads, not a documented API.",
+    "execution": {
+      "taskSupport": "forbidden",
+    },
+    "inputSchema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "properties": {
+        "buckets": {
+          "description": "Price buckets across the range (default 60)",
+          "maximum": 200,
+          "minimum": 1,
+          "type": "integer",
+        },
+        "coin": {
+          "description": "Hyperliquid perp market name, for example BTC, ETH, kPEPE",
+          "pattern": "^[A-Za-z0-9:_-]{1,32}$",
+          "type": "string",
+        },
+        "range": {
+          "description": "Price range on each side of the mark (default 0.25)",
+          "exclusiveMaximum": 1,
+          "exclusiveMinimum": 0,
+          "type": "number",
+        },
+        "rank": {
+          "description": "Rank by 30-day volume or by account value",
+          "enum": [
+            "volume",
+            "value",
+          ],
+          "type": "string",
+        },
+        "top": {
+          "description": "Accounts sampled from the top of the ranking",
+          "maximum": 100,
+          "minimum": 1,
+          "type": "integer",
+        },
+      },
+      "required": [
+        "coin",
+        "rank",
+        "top",
+      ],
+      "type": "object",
+    },
+    "name": "liquidation_map",
+    "title": "Liquidation map of large accounts",
+  },
+]
+`;
