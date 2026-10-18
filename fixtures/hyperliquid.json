@@ -1,0 +1,4332 @@
+{
+ "recordedAt": "2026-10-18T22:35:51.174Z",
+ "recordedWith": "scripts/record.ts",
+ "account": "0x000000000000000000000000000000000000ee01",
+ "exchanges": [
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000ee01"
+   },
+   "response": {
+    "marginSummary": {
+     "accountValue": "7743702.7428080002",
+     "totalNtlPos": "8138610.2104000002",
+     "totalRawUsd": "15882312.9532079995",
+     "totalMarginUsed": "7725747.1990189999"
+    },
+    "crossMarginSummary": {
+     "accountValue": "41077.539589",
+     "totalNtlPos": "380274.838",
+     "totalRawUsd": "421352.377589",
+     "totalMarginUsed": "23121.9958"
+    },
+    "crossMaintenanceMarginUsed": "10070.4491",
+    "withdrawable": "3050.055789",
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "-124.8",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "2667.44",
+       "positionValue": "298109.76",
+       "unrealizedPnl": "34787.38796",
+       "returnOnEquity": "2.0899781313",
+       "liquidationPx": "21597.1516410492",
+       "marginUsed": "14905.488",
+       "maxLeverage": 25,
+       "cumFunding": {
+        "allTime": "-329.435271",
+        "sinceOpen": "-940.893722",
+        "sinceChange": "-940.893722"
+       }
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "-1051.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "90.3486",
+       "positionValue": "82165.078",
+       "unrealizedPnl": "12791.34416",
+       "returnOnEquity": "1.3470752024",
+       "liquidationPx": "2293.8991364225",
+       "marginUsed": "8216.5078",
+       "maxLeverage": 10,
+       "cumFunding": {
+        "allTime": "-365.978654",
+        "sinceOpen": "-365.978654",
+        "sinceChange": "-365.978654"
+       }
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LIT",
+       "szi": "-2551077.0",
+       "leverage": {
+        "type": "isolated",
+        "value": 3,
+        "rawUsd": "15460960.5756189991"
+       },
+       "entryPx": "1.323484",
+       "positionValue": "7758335.3723999998",
+       "unrealizedPnl": "-4382023.2942120004",
+       "returnOnEquity": "-3.8936181189",
+       "liquidationPx": "5.5096019074",
+       "marginUsed": "7702625.2032190003",
+       "maxLeverage": 5,
+       "cumFunding": {
+        "allTime": "-458087.814494",
+        "sinceOpen": "-431361.348877",
+        "sinceChange": "3968.104297"
+       }
+      }
+     }
+    ],
+    "time": 1792362945728
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e001"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362945863
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e002"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "-10.54937",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "81543.0",
+       "positionValue": "860828.5919999999",
+       "liquidationPx": "234108.8847336118"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "-3.3767",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "2386.52",
+       "positionValue": "8065.92329",
+       "liquidationPx": "475348.3077119614"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOL",
+       "szi": "-604.82",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "103.2927",
+       "positionValue": "62502.0988",
+       "liquidationPx": "2730.9850103018"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BNB",
+       "szi": "-0.02",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "590.08",
+       "positionValue": "14.358",
+       "liquidationPx": "77571363.6861428469"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LTC",
+       "szi": "52.1",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "58.4345",
+       "positionValue": "3050.455",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ARB",
+       "szi": "-806.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.18297",
+       "positionValue": "147.79622",
+       "liquidationPx": "1925.0132902517"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DOGE",
+       "szi": "6483.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.07875",
+       "positionValue": "511.515183",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SUI",
+       "szi": "4163.4",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.97546",
+       "positionValue": "4077.21762",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kPEPE",
+       "szi": "-9767.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.00398",
+       "positionValue": "38.931262",
+       "liquidationPx": "158.8463035717"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LINK",
+       "szi": "391.1",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "11.90629",
+       "positionValue": "4666.6052",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XRP",
+       "szi": "9503.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "1.299878",
+       "positionValue": "12352.9497",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AAVE",
+       "szi": "6.13",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "150.8803",
+       "positionValue": "924.9557",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WLD",
+       "szi": "3701.5",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.47988",
+       "positionValue": "1780.088365",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "UNI",
+       "szi": "562.9",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "7.1498",
+       "positionValue": "4024.56613",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "NEAR",
+       "szi": "-2588.6",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "4.92578",
+       "positionValue": "12763.61002",
+       "liquidationPx": "604.2557852673"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ONDO",
+       "szi": "-3331.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.428258",
+       "positionValue": "1431.56387",
+       "liquidationPx": "466.1796696465"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TAO",
+       "szi": "-4.292",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "265.127",
+       "positionValue": "1139.48308",
+       "liquidationPx": "345301.4049176056"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ENA",
+       "szi": "-14143.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.185988",
+       "positionValue": "2637.429069",
+       "liquidationPx": "109.8812377"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "-99.96",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "78.136",
+       "positionValue": "7814.67288",
+       "liquidationPx": "15598.5152921454"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "FARTCOIN",
+       "szi": "-4386.5",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.14182",
+       "positionValue": "624.506005",
+       "liquidationPx": "353.8213659473"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TRUMP",
+       "szi": "0.7",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "2.0514",
+       "positionValue": "1.19595",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "VVV",
+       "szi": "201.6",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "22.5324",
+       "positionValue": "4551.5232",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PUMP",
+       "szi": "2059177.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.004105",
+       "positionValue": "8459.099116",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XPL",
+       "szi": "20355.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.07599",
+       "positionValue": "1549.320825",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZEC",
+       "szi": "3.31",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "1111.9099",
+       "positionValue": "3690.319",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MEGA",
+       "szi": "869.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.043061",
+       "positionValue": "37.440865",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CHIP",
+       "szi": "-283.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.038816",
+       "positionValue": "11.542155",
+       "liquidationPx": "4933.8627784634"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PONS",
+       "szi": "3157.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.255542",
+       "positionValue": "809.73893",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "USELESS",
+       "szi": "-3072.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.141372",
+       "positionValue": "437.66784",
+       "liquidationPx": "454.6579726532"
+      }
+     }
+    ],
+    "time": 1792362945930
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e003"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362946162
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e004"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362946270
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e005"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362946409
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e006"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "-3.0",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "80955.0",
+       "positionValue": "244800.0",
+       "liquidationPx": "108748.30370107"
+      }
+     }
+    ],
+    "time": 1792362946471
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e007"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "75.40697",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "81179.2",
+       "positionValue": "6153208.7520000003",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "-7492.7544",
+       "leverage": {
+        "type": "cross",
+        "value": 15
+       },
+       "entryPx": "2377.53",
+       "positionValue": "17897942.4352799989",
+       "liquidationPx": "6218.5347645491"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ATOM",
+       "szi": "18929.44",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.6907",
+       "positionValue": "31659.4884",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOL",
+       "szi": "-117662.36",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "104.6614",
+       "positionValue": "12159228.2824000008",
+       "liquidationPx": "346.0346964221"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AVAX",
+       "szi": "2509.46",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "9.5381",
+       "positionValue": "24152.046824",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BNB",
+       "szi": "-2090.499",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "727.707",
+       "positionValue": "1500769.2320999999",
+       "liquidationPx": "13479.0520013386"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LTC",
+       "szi": "-2628.05",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "62.0221",
+       "positionValue": "153872.3275",
+       "liquidationPx": "10526.8155797821"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ARB",
+       "szi": "-2382392.1000000001",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.18189",
+       "positionValue": "436859.239377",
+       "liquidationPx": "11.4013114307"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DOGE",
+       "szi": "-37101073.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.084458",
+       "positionValue": "2927311.7607729998",
+       "liquidationPx": "0.8170214292"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "INJ",
+       "szi": "-0.4",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "7.83",
+       "positionValue": "3.302",
+       "liquidationPx": "69690321.3717047572"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SUI",
+       "szi": "-694857.6",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.95795",
+       "positionValue": "680474.04768",
+       "liquidationPx": "40.5373172328"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kPEPE",
+       "szi": "-180218394.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.004005",
+       "positionValue": "718350.518484",
+       "liquidationPx": "0.1564979975"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CRV",
+       "szi": "-1268399.2",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.34761",
+       "positionValue": "438472.919448",
+       "liquidationPx": "22.0251336376"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LDO",
+       "szi": "-1306034.7",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.41947",
+       "positionValue": "496671.936063",
+       "liquidationPx": "20.7541963323"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LINK",
+       "szi": "35486.1",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "12.70288",
+       "positionValue": "423420.1452",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "STX",
+       "szi": "-4.1",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.6031",
+       "positionValue": "1.43459",
+       "liquidationPx": "6490007.3363780491"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SNX",
+       "szi": "467148.1",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.23618",
+       "positionValue": "97442.422179",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XRP",
+       "szi": "-3728536.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1.294314",
+       "positionValue": "4846723.9463999998",
+       "liquidationPx": "8.9586783357"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BCH",
+       "szi": "-396.072",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "276.112",
+       "positionValue": "107783.07336",
+       "liquidationPx": "69737.3290624019"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "APT",
+       "szi": "-249967.39",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.8249",
+       "positionValue": "191350.037045",
+       "liquidationPx": "110.8175424872"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AAVE",
+       "szi": "-6816.96",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "171.6658",
+       "positionValue": "1028611.0943999999",
+       "liquidationPx": "4180.7456106982"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WLD",
+       "szi": "-905413.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.51413",
+       "positionValue": "435422.16583",
+       "liquidationPx": "30.8519424869"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TRX",
+       "szi": "3305467.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.332288",
+       "positionValue": "1101348.5497300001",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kSHIB",
+       "szi": "-584.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.014599",
+       "positionValue": "2.879704",
+       "liquidationPx": "45796.909297486"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "UNI",
+       "szi": "-178207.7",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "7.40055",
+       "positionValue": "1274131.5926900001",
+       "liquidationPx": "161.2407099915"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SEI",
+       "szi": "-3994082.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.066123",
+       "positionValue": "242967.996224",
+       "liquidationPx": "6.7229457584"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZRO",
+       "szi": "794362.4",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.29271",
+       "positionValue": "1459720.3462400001",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TIA",
+       "szi": "-543158.2",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.62173",
+       "positionValue": "329110.416544",
+       "liquidationPx": "49.5953831887"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ADA",
+       "szi": "161402.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.218333",
+       "positionValue": "35303.45946",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "NEAR",
+       "szi": "-16909.8",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "4.86635",
+       "positionValue": "83377.15086",
+       "liquidationPx": "1632.0540061986"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PYTH",
+       "szi": "-1999030.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.082232",
+       "positionValue": "147464.44504",
+       "liquidationPx": "13.3847381428"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kBONK",
+       "szi": "-211620845.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.003352",
+       "positionValue": "613488.829655",
+       "liquidationPx": "0.1328022413"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "JUP",
+       "szi": "1281867.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.304148",
+       "positionValue": "367511.2689",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WIF",
+       "szi": "-390408.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.209614",
+       "positionValue": "76195.92936",
+       "liquidationPx": "68.3521458933"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ONDO",
+       "szi": "524602.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.453273",
+       "positionValue": "225458.20154",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "STRK",
+       "szi": "-1154265.3",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.06189",
+       "positionValue": "69128.948817",
+       "liquidationPx": "23.1126740043"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TAO",
+       "szi": "-1529.922",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "271.683",
+       "positionValue": "406178.99178",
+       "liquidationPx": "17657.8986617226"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kFLOKI",
+       "szi": "-570283.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.024209",
+       "positionValue": "13159.280225",
+       "liquidationPx": "46.6824154407"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BOME",
+       "szi": "-5093.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.000572",
+       "positionValue": "3.116916",
+       "liquidationPx": "4926.0781148497"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETHFI",
+       "szi": "9.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.1562",
+       "positionValue": "5.97879",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ENA",
+       "szi": "-7634946.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.227129",
+       "positionValue": "1423787.6349180001",
+       "liquidationPx": "3.7822388749"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "POPCAT",
+       "szi": "-7053215.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.052101",
+       "positionValue": "303937.14078",
+       "liquidationPx": "3.6001241792"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "EIGEN",
+       "szi": "-1544382.3300000001",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.2334",
+       "positionValue": "359223.329958",
+       "liquidationPx": "17.4621604059"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TURBO",
+       "szi": "853.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.002621",
+       "positionValue": "0.710549",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "GOAT",
+       "szi": "234.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.046428",
+       "positionValue": "3.286296",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MOODENG",
+       "szi": "245.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.094647",
+       "positionValue": "8.91408",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "GRASS",
+       "szi": "-57503.5",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.6531",
+       "positionValue": "33559.0426",
+       "liquidationPx": "436.8790032713"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PURR",
+       "szi": "121.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.087038",
+       "positionValue": "10.841237",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PNUT",
+       "szi": "-50.1",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.17553",
+       "positionValue": "2.130753",
+       "liquidationPx": "531118.3787487569"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XLM",
+       "szi": "32096.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.173685",
+       "positionValue": "5672.968",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "-19971.5",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "77.7469",
+       "positionValue": "1561331.9269999999",
+       "liquidationPx": "1452.4938961823"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ME",
+       "szi": "2.1",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "1.5",
+       "positionValue": "0.123186",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "VIRTUAL",
+       "szi": "-1115508.1000000001",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.75677",
+       "positionValue": "722748.853071",
+       "liquidationPx": "24.5016396543"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PENGU",
+       "szi": "10202086.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.007413",
+       "positionValue": "75719.882292",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "USUAL",
+       "szi": "17.7",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.15174",
+       "positionValue": "0.18054",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "FARTCOIN",
+       "szi": "2534962.5",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.13941",
+       "positionValue": "360902.611125",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AIXBT",
+       "szi": "-229726.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.020266",
+       "positionValue": "4166.770188",
+       "liquidationPx": "109.2287311502"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "GRIFFAIN",
+       "szi": "-3535.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.007898",
+       "positionValue": "50.751995",
+       "liquidationPx": "7097.1891015581"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SPX",
+       "szi": "-491453.9",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.36596",
+       "positionValue": "176957.805773",
+       "liquidationPx": "54.5035586254"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MORPHO",
+       "szi": "-77506.1",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "2.38762",
+       "positionValue": "181155.00753",
+       "liquidationPx": "345.6525828559"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TRUMP",
+       "szi": "102207.9",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1.85498",
+       "positionValue": "174622.19715",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MELANIA",
+       "szi": "1719155.3",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.10033",
+       "positionValue": "138529.534074",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "VVV",
+       "szi": "-18320.24",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "22.8859",
+       "positionValue": "413616.05848",
+       "liquidationPx": "1392.019361127"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BERA",
+       "szi": "36.9",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.2609",
+       "positionValue": "6.191082",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LAYER",
+       "szi": "6.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "1.141",
+       "positionValue": "0.37932",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "KAITO",
+       "szi": "25.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.34043",
+       "positionValue": "6.78125",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PAXG",
+       "szi": "98.993",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "4134.775",
+       "positionValue": "413055.123017",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZORA",
+       "szi": "139.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.026761",
+       "positionValue": "0.885291",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOPH",
+       "szi": "112.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.053636",
+       "positionValue": "0.236208",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PUMP",
+       "szi": "-71938075.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.004452",
+       "positionValue": "295521.6121",
+       "liquidationPx": "0.3864463758"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XPL",
+       "szi": "-8369763.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.080756",
+       "positionValue": "637064.510745",
+       "liquidationPx": "3.2681330778"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WLFI",
+       "szi": "2008178.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.056151",
+       "positionValue": "113887.790736",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ASTER",
+       "szi": "-1394563.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.734665",
+       "positionValue": "970113.80532",
+       "liquidationPx": "19.7761897095"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AVNT",
+       "szi": "-955352.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.126315",
+       "positionValue": "100961.59936",
+       "liquidationPx": "27.9582711335"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "STBL",
+       "szi": "-450349.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.023105",
+       "positionValue": "10226.975441",
+       "liquidationPx": "55.731754034"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "0G",
+       "szi": "3.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "1.8125",
+       "positionValue": "0.67083",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "2Z",
+       "szi": "4924555.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.033289",
+       "positionValue": "146293.755385",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZEC",
+       "szi": "-1636.33",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1112.2121",
+       "positionValue": "1824344.317",
+       "liquidationPx": "17881.1970256422"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MON",
+       "szi": "4860473.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.021992",
+       "positionValue": "102453.910367",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MET",
+       "szi": "175102.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.3384",
+       "positionValue": "58037.032594",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LIT",
+       "szi": "185203.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "3.021831",
+       "positionValue": "563239.3636",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CHIP",
+       "szi": "132.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.03071",
+       "positionValue": "5.38362",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "GRAM",
+       "szi": "-7495.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.341481",
+       "positionValue": "10088.27",
+       "liquidationPx": "3551.5833108152"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CASHCAT",
+       "szi": "-6882965.0",
+       "leverage": {
+        "type": "isolated",
+        "value": 1
+       },
+       "entryPx": "0.109322",
+       "positionValue": "711010.2845",
+       "liquidationPx": "0.1876220816"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PONS",
+       "szi": "-342418.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.250866",
+       "positionValue": "87826.79282",
+       "liquidationPx": "73.5251637321"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "USELESS",
+       "szi": "-575710.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.136742",
+       "positionValue": "82021.4037",
+       "liquidationPx": "43.7208562049"
+      }
+     }
+    ],
+    "time": 1792362946611
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e008"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362946740
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e009"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "-20000.01",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "25.9443",
+       "positionValue": "1563560.7817800001",
+       "liquidationPx": "125.9739578388"
+      }
+     }
+    ],
+    "time": 1792362947016
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e00a"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "-0.3986",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "81576.0",
+       "positionValue": "32525.76",
+       "liquidationPx": "5423146.0874963608"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "-46.8511",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "2386.69",
+       "positionValue": "111913.22257",
+       "liquidationPx": "47499.3767463388"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOL",
+       "szi": "-4204.19",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "101.9415",
+       "positionValue": "434460.9946",
+       "liquidationPx": "603.5969211254"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XRP",
+       "szi": "14629.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1.2969",
+       "positionValue": "19016.2371",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "467.61",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "78.0637",
+       "positionValue": "36556.81458",
+       "liquidationPx": null
+      }
+     }
+    ],
+    "time": 1792362947148
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e00b"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362947276
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e00c"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "-81.8678",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "82147.2",
+       "positionValue": "6680412.4800000004",
+       "liquidationPx": "409280.8132990075"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "287.1929",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "2377.93",
+       "positionValue": "686017.6802300001",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOL",
+       "szi": "12562.26",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "102.1957",
+       "positionValue": "1298183.9484000001",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XRP",
+       "szi": "-1280943.0",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "1.275639",
+       "positionValue": "1665097.8056999999",
+       "liquidationPx": "21.9872801247"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "NEAR",
+       "szi": "-408392.8",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "4.92896",
+       "positionValue": "2013662.3789599999",
+       "liquidationPx": "67.3954187021"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "-9783.78",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "78.3854",
+       "positionValue": "764876.3528399999",
+       "liquidationPx": "2691.3708940688"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PAXG",
+       "szi": "168.467",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "4091.681",
+       "positionValue": "702940.181723",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZEC",
+       "szi": "-1090.28",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1140.9355",
+       "positionValue": "1215553.172",
+       "liquidationPx": "24545.9627207423"
+      }
+     }
+    ],
+    "time": 1792362947470
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e00d"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "W",
+       "szi": "0.1",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.01271",
+       "positionValue": "0.00129",
+       "liquidationPx": null
+      }
+     }
+    ],
+    "time": 1792362947521
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e00e"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ONDO",
+       "szi": "-25.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.44759",
+       "positionValue": "10.74425",
+       "liquidationPx": "247334.8114113818"
+      }
+     }
+    ],
+    "time": 1792362947710
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e00f"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "-5405.4334",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "2368.0",
+       "positionValue": "12911958.7625799999",
+       "liquidationPx": "6054.6520525955"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "NEAR",
+       "szi": "1642.8",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "4.70317",
+       "positionValue": "8100.15396",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "9.46",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "94.2602",
+       "positionValue": "739.56388",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZEC",
+       "szi": "-21.3",
+       "leverage": {
+        "type": "cross",
+        "value": 4
+       },
+       "entryPx": "1279.5421",
+       "positionValue": "23747.37",
+       "liquidationPx": "904865.4415272523"
+      }
+     }
+    ],
+    "time": 1792362947788
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e010"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362947910
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e011"
+   },
+   "response": {
+    "assetPositions": [],
+    "time": 1792362948050
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e012"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "-60.0",
+       "leverage": {
+        "type": "cross",
+        "value": 40
+       },
+       "entryPx": "81553.5",
+       "positionValue": "4897200.0",
+       "liquidationPx": "118282.6077470288"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "-300.0",
+       "leverage": {
+        "type": "cross",
+        "value": 25
+       },
+       "entryPx": "2398.94",
+       "positionValue": "716760.0",
+       "liquidationPx": "9667.8059497778"
+      }
+     }
+    ],
+    "time": 1792362948319
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e013"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "240.33515",
+       "leverage": {
+        "type": "cross",
+        "value": 40
+       },
+       "entryPx": "81446.7",
+       "positionValue": "19616154.943",
+       "liquidationPx": "49979.3077664538"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "3682.4486",
+       "leverage": {
+        "type": "cross",
+        "value": 25
+       },
+       "entryPx": "2372.01",
+       "positionValue": "8798106.1951199993",
+       "liquidationPx": "308.36519156"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ATOM",
+       "szi": "29664.19",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.7109",
+       "positionValue": "49622.257032",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DYDX",
+       "szi": "23147.7",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.13265",
+       "positionValue": "2609.208744",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOL",
+       "szi": "-9628.47",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "102.275",
+       "positionValue": "995391.2286",
+       "liquidationPx": "864.2653573528"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AVAX",
+       "szi": "-4856.24",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "10.8036",
+       "positionValue": "46761.220584",
+       "liquidationPx": "1482.3177257735"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BNB",
+       "szi": "1440.326",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "749.137",
+       "positionValue": "1034110.8582200001",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "APE",
+       "szi": "-948034.2",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.15155",
+       "positionValue": "131824.15551",
+       "liquidationPx": "7.3398986639"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "OP",
+       "szi": "22051.3",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.09861",
+       "positionValue": "2732.817609",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LTC",
+       "szi": "-1266.05",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "59.8323",
+       "positionValue": "74148.75035",
+       "liquidationPx": "5707.4192665189"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ARB",
+       "szi": "-962970.3",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.18437",
+       "positionValue": "176714.679753",
+       "liquidationPx": "7.4059362299"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DOGE",
+       "szi": "530721.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.086892",
+       "positionValue": "41887.154925",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "INJ",
+       "szi": "-4579.4",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "4.84036",
+       "positionValue": "37816.6852",
+       "liquidationPx": "1498.9884018843"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SUI",
+       "szi": "-62197.2",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.97825",
+       "positionValue": "60961.341636",
+       "liquidationPx": "115.9648787029"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kPEPE",
+       "szi": "12535946.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.003838",
+       "positionValue": "50005.888594",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CRV",
+       "szi": "-901529.5",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.19248",
+       "positionValue": "311830.038755",
+       "liquidationPx": "8.2787745168"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LDO",
+       "szi": "-1620862.5",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.39172",
+       "positionValue": "616738.18125",
+       "liquidationPx": "4.5922396154"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LINK",
+       "szi": "-15102.9",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "12.75371",
+       "positionValue": "180238.0086",
+       "liquidationPx": "485.4675208488"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "STX",
+       "szi": "6244.8",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.42168",
+       "positionValue": "2185.36776",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CFX",
+       "szi": "-956.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.039006",
+       "positionValue": "49.808556",
+       "liquidationPx": "7140.9002206533"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XRP",
+       "szi": "-2681696.0",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "1.349493",
+       "positionValue": "3487277.4783999999",
+       "liquidationPx": "4.0323136236"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BCH",
+       "szi": "70.581",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "271.362",
+       "positionValue": "19215.67725",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "APT",
+       "szi": "-375.59",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.8252",
+       "positionValue": "287.664381",
+       "liquidationPx": "19042.0859884651"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AAVE",
+       "szi": "2834.46",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "161.0453",
+       "positionValue": "427890.0816",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "COMP",
+       "szi": "-1.61",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "19.2193",
+       "positionValue": "33.96617",
+       "liquidationPx": "4240176.8748814221"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WLD",
+       "szi": "-565.5",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.57657",
+       "positionValue": "272.146875",
+       "liquidationPx": "12647.2176107886"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kSHIB",
+       "szi": "-33175437.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.005244",
+       "positionValue": "163588.079847",
+       "liquidationPx": "0.2145914972"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "UNI",
+       "szi": "-42231.3",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "8.01319",
+       "positionValue": "301953.795",
+       "liquidationPx": "176.4966554908"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "RUNE",
+       "szi": "-37209.9",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.46997",
+       "positionValue": "24014.153163",
+       "liquidationPx": "184.108663435"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZRO",
+       "szi": "275922.4",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.97199",
+       "positionValue": "507200.55568",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DOT",
+       "szi": "28216.4",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1.07458",
+       "positionValue": "30927.99604",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TRB",
+       "szi": "3503.22",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "19.9496",
+       "positionValue": "61152.20832",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BLUR",
+       "szi": "-6885.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.009239",
+       "positionValue": "65.565855",
+       "liquidationPx": "934.8761128073"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TIA",
+       "szi": "91.6",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.47863",
+       "positionValue": "55.531584",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ADA",
+       "szi": "1038411.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.220309",
+       "positionValue": "227214.71091",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PENDLE",
+       "szi": "-179542.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "2.177364",
+       "positionValue": "362315.756",
+       "liquidationPx": "40.040584144"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "FET",
+       "szi": "-299671.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.227739",
+       "positionValue": "55993.52635",
+       "liquidationPx": "22.9673352735"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "NEAR",
+       "szi": "-26141.9",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "4.82081",
+       "positionValue": "128944.92175",
+       "liquidationPx": "278.5059362088"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ORDI",
+       "szi": "-77.45",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "3.9626",
+       "positionValue": "282.421425",
+       "liquidationPx": "83109.6048063082"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "NEO",
+       "szi": "-3.52",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "2.1209",
+       "positionValue": "7.66832",
+       "liquidationPx": "1939391.6109969006"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZEN",
+       "szi": "-720.55",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "5.6251",
+       "positionValue": "4197.996355",
+       "liquidationPx": "9480.0482946966"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "FIL",
+       "szi": "-334523.3",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.15042",
+       "positionValue": "346465.78181",
+       "liquidationPx": "21.442801097"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SUSHI",
+       "szi": "219.1",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.16437",
+       "positionValue": "46.36156",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "IMX",
+       "szi": "-769130.2",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.12396",
+       "positionValue": "115892.538536",
+       "liquidationPx": "9.026486466"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kBONK",
+       "szi": "-2716663.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.003286",
+       "positionValue": "7881.039363",
+       "liquidationPx": "2.635442987"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "JUP",
+       "szi": "-1391722.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.306883",
+       "positionValue": "399131.95238",
+       "liquidationPx": "5.2769188312"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kLUNC",
+       "szi": "171860.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.050735",
+       "positionValue": "7836.64414",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "GALA",
+       "szi": "578079.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.002054",
+       "positionValue": "1095.459705",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WIF",
+       "szi": "-67846.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.179296",
+       "positionValue": "13248.28842",
+       "liquidationPx": "100.8150678125"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CAKE",
+       "szi": "-3997.7",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "1.99575",
+       "positionValue": "8637.83039",
+       "liquidationPx": "1612.2256050263"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ENS",
+       "szi": "-3259.42",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "5.7448",
+       "positionValue": "17572.836988",
+       "liquidationPx": "2099.8286932572"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETC",
+       "szi": "-4028.17",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "9.3874",
+       "positionValue": "30921.844188",
+       "liquidationPx": "1702.4039816036"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ONDO",
+       "szi": "-639709.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.457246",
+       "positionValue": "275004.50201",
+       "liquidationPx": "11.2950087245"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DYM",
+       "szi": "-2199.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.0203",
+       "positionValue": "37.05315",
+       "liquidationPx": "2927.0548085375"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "W",
+       "szi": "-610629.3",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.02412",
+       "positionValue": "7883.224263",
+       "liquidationPx": "11.1926074079"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "STRK",
+       "szi": "-396723.1",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.0276",
+       "positionValue": "23775.615383",
+       "liquidationPx": "17.2675259338"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TAO",
+       "szi": "-1045.583",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "284.811",
+       "positionValue": "277748.66812",
+       "liquidationPx": "6794.6776779166"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AR",
+       "szi": "-15985.93",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "2.2927",
+       "positionValue": "59258.243917",
+       "liquidationPx": "430.7481045085"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "kFLOKI",
+       "szi": "-398670.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.025671",
+       "positionValue": "9200.10759",
+       "liquidationPx": "17.1466398525"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BOME",
+       "szi": "-1089104.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.000586",
+       "positionValue": "667.620752",
+       "liquidationPx": "5.9105687717"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETHFI",
+       "szi": "3825.7",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.65173",
+       "positionValue": "2542.828019",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ENA",
+       "szi": "2453327.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.182156",
+       "positionValue": "457913.48455",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MNT",
+       "szi": "26089.9",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.52446",
+       "positionValue": "13700.589187",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HBAR",
+       "szi": "-6110273.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.096374",
+       "positionValue": "522513.885322",
+       "liquidationPx": "1.2027555377"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "POPCAT",
+       "szi": "-346263.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.051122",
+       "positionValue": "14928.436719",
+       "liquidationPx": "18.6317478551"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "REZ",
+       "szi": "-22645.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.0026",
+       "positionValue": "74.90966",
+       "liquidationPx": "284.2407321918"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TURBO",
+       "szi": "-4465079.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.001027",
+       "positionValue": "3723.875886",
+       "liquidationPx": "1.4423664949"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BRETT",
+       "szi": "10207.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.005267",
+       "positionValue": "46.360194",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "IO",
+       "szi": "-1132.3",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.17822",
+       "positionValue": "167.002927",
+       "liquidationPx": "5684.6449472321"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "RENDER",
+       "szi": "-1721.1",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.48704",
+       "positionValue": "3071.47506",
+       "liquidationPx": "3968.2309438435"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MOODENG",
+       "szi": "11294.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.048818",
+       "positionValue": "411.022542",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "GRASS",
+       "szi": "3993.9",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.35606",
+       "positionValue": "2332.078149",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PNUT",
+       "szi": "-554746.9",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.04813",
+       "positionValue": "23610.028064",
+       "liquidationPx": "11.6452502914"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XLM",
+       "szi": "-1248407.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.216623",
+       "positionValue": "220718.3576",
+       "liquidationPx": "5.64508943"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SAND",
+       "szi": "52348.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.038562",
+       "positionValue": "3022.416476",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ALGO",
+       "szi": "24997.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.113466",
+       "positionValue": "2733.92189",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "16796.84",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "78.1601",
+       "positionValue": "1313412.10696",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "VIRTUAL",
+       "szi": "-58222.6",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.71489",
+       "positionValue": "37742.218224",
+       "liquidationPx": "117.8991151308"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PENGU",
+       "szi": "-6032539.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.00791",
+       "positionValue": "44803.667153",
+       "liquidationPx": "1.1390650719"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "FARTCOIN",
+       "szi": "174152.5",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.16844",
+       "positionValue": "24814.989725",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BIO",
+       "szi": "48963.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.026189",
+       "positionValue": "1143.77568",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SPX",
+       "szi": "-940371.9",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.41376",
+       "positionValue": "338703.150942",
+       "liquidationPx": "7.6197023256"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "S",
+       "szi": "-354487.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.050588",
+       "positionValue": "18219.213852",
+       "liquidationPx": "19.3092271825"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "TRUMP",
+       "szi": "1009.9",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "2.25973",
+       "positionValue": "1725.51514",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MELANIA",
+       "szi": "575067.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.10705",
+       "positionValue": "46350.4002",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ANIME",
+       "szi": "-125633.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.002866",
+       "positionValue": "330.666056",
+       "liquidationPx": "51.235639815"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "VVV",
+       "szi": "9612.08",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "21.7697",
+       "positionValue": "217146.49928",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BERA",
+       "szi": "-840.2",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.23333",
+       "positionValue": "141.044374",
+       "liquidationPx": "8125.1985798176"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "KAITO",
+       "szi": "-83964.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.302208",
+       "positionValue": "22781.11248",
+       "liquidationPx": "81.5758171939"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PAXG",
+       "szi": "-8.018",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "4146.033",
+       "positionValue": "33456.7086",
+       "liquidationPx": "872405.8852420689"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BABY",
+       "szi": "-351552.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.013624",
+       "positionValue": "4177.843968",
+       "liquidationPx": "18.3208581228"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOPH",
+       "szi": "1608879.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.002547",
+       "positionValue": "3396.343569",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "RESOLV",
+       "szi": "-35158.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.01977",
+       "positionValue": "557.676196",
+       "liquidationPx": "183.0910218732"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PUMP",
+       "szi": "-94667280.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.004539",
+       "positionValue": "388987.85352",
+       "liquidationPx": "0.079654948"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XPL",
+       "szi": "-2109717.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.090976",
+       "positionValue": "160648.620399",
+       "liquidationPx": "3.3731352827"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WLFI",
+       "szi": "6791612.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.057376",
+       "positionValue": "385206.649416",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SKY",
+       "szi": "-1378.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.062865",
+       "positionValue": "94.726476",
+       "liquidationPx": "4671.0095771408"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ASTER",
+       "szi": "960094.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.739785",
+       "positionValue": "667908.59298",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AVNT",
+       "szi": "-25344.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.138186",
+       "positionValue": "2680.88832",
+       "liquidationPx": "269.4654234023"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HEMI",
+       "szi": "-26187.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.009126",
+       "positionValue": "131.45874",
+       "liquidationPx": "245.7970721948"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "2Z",
+       "szi": "-536.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.057361",
+       "positionValue": "15.92992",
+       "liquidationPx": "12008.5305984019"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZEC",
+       "szi": "-1518.07",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1142.3473",
+       "positionValue": "1694166.1200000001",
+       "liquidationPx": "5827.0669547693"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "MON",
+       "szi": "-37538.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.026958",
+       "positionValue": "791.751496",
+       "liquidationPx": "181.8808288637"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ICP",
+       "szi": "-136.8",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "2.51511",
+       "positionValue": "393.21792",
+       "liquidationPx": "49905.2925461191"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AERO",
+       "szi": "-1176725.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.856102",
+       "positionValue": "932872.27825",
+       "liquidationPx": "6.2626601365"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "STABLE",
+       "szi": "2012073.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.026949",
+       "positionValue": "48205.244934",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LIT",
+       "szi": "-87567.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "2.550633",
+       "positionValue": "266319.093306",
+       "liquidationPx": "81.0004898614"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XMR",
+       "szi": "-1043.752",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "549.002",
+       "positionValue": "617139.24504",
+       "liquidationPx": "7131.7612300902"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DASH",
+       "szi": "-1369.24",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "50.0009",
+       "positionValue": "66565.6026",
+       "liquidationPx": "5034.337592379"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "GRAM",
+       "szi": "-5593.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "1.414242",
+       "positionValue": "7528.7373",
+       "liquidationPx": "1221.916599265"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "CASHCAT",
+       "szi": "-13484684.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.125831",
+       "positionValue": "1391619.3888000001",
+       "liquidationPx": "0.5805234931"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "PONS",
+       "szi": "-731439.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.306408",
+       "positionValue": "187636.04667",
+       "liquidationPx": "9.0563840833"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "USELESS",
+       "szi": "-635.0",
+       "leverage": {
+        "type": "cross",
+        "value": 3
+       },
+       "entryPx": "0.293737",
+       "positionValue": "90.53195",
+       "liquidationPx": "10136.451972872"
+      }
+     }
+    ],
+    "time": 1792362948453
+   }
+  },
+  {
+   "request": {
+    "type": "clearinghouseState",
+    "user": "0x000000000000000000000000000000000000e014"
+   },
+   "response": {
+    "assetPositions": [
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BTC",
+       "szi": "-258.58335",
+       "leverage": {
+        "type": "cross",
+        "value": 25
+       },
+       "entryPx": "81924.4",
+       "positionValue": "21105573.0269999988",
+       "liquidationPx": "111030.2023703793"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ETH",
+       "szi": "-7488.277",
+       "leverage": {
+        "type": "cross",
+        "value": 25
+       },
+       "entryPx": "2465.42",
+       "positionValue": "17890991.4083999991",
+       "liquidationPx": "3397.3183720764"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SOL",
+       "szi": "-12461.11",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "103.9951",
+       "positionValue": "1288229.5518",
+       "liquidationPx": "706.2351942041"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AVAX",
+       "szi": "6840.36",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "9.8937",
+       "positionValue": "65866.510476",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BNB",
+       "szi": "-428.681",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "759.285",
+       "positionValue": "307780.09757",
+       "liquidationPx": "17332.7021803732"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LTC",
+       "szi": "3687.97",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "61.9031",
+       "positionValue": "215993.33899",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DOGE",
+       "szi": "-271352.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.083986",
+       "positionValue": "21416.4566",
+       "liquidationPx": "27.1042718392"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "SUI",
+       "szi": "678223.7",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1.01011",
+       "positionValue": "664747.3950810001",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "LINK",
+       "szi": "-25893.3",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "12.63603",
+       "positionValue": "309010.6422",
+       "liquidationPx": "295.149423121"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XRP",
+       "szi": "-1319383.0",
+       "leverage": {
+        "type": "cross",
+        "value": 20
+       },
+       "entryPx": "1.304075",
+       "positionValue": "1715725.6532000001",
+       "liquidationPx": "6.9941560125"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "BCH",
+       "szi": "355.608",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "273.375",
+       "positionValue": "96814.278",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "AAVE",
+       "szi": "5775.58",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "164.411",
+       "positionValue": "871881.5568",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "WLD",
+       "szi": "-287494.5",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.53068",
+       "positionValue": "138356.728125",
+       "liquidationPx": "25.9891533355"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "DOT",
+       "szi": "262378.3",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1.13816",
+       "positionValue": "287592.85463",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ADA",
+       "szi": "1457101.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.237212",
+       "positionValue": "318828.26981",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "NEAR",
+       "szi": "-319997.7",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "5.0111",
+       "positionValue": "1578388.6552500001",
+       "liquidationPx": "27.8494832018"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ONDO",
+       "szi": "44768.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.44786",
+       "positionValue": "19245.31552",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ENA",
+       "szi": "1624364.0",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "0.190968",
+       "positionValue": "303187.5406",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HBAR",
+       "szi": "-1268468.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.094135",
+       "positionValue": "108471.772552",
+       "liquidationPx": "5.6040185061"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "XLM",
+       "szi": "-360195.0",
+       "leverage": {
+        "type": "cross",
+        "value": 5
+       },
+       "entryPx": "0.210442",
+       "positionValue": "63682.476",
+       "liquidationPx": "19.6108464856"
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "HYPE",
+       "szi": "3213.73",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "78.339",
+       "positionValue": "251294.40362",
+       "liquidationPx": null
+      }
+     },
+     {
+      "type": "oneWay",
+      "position": {
+       "coin": "ZEC",
+       "szi": "-4072.36",
+       "leverage": {
+        "type": "cross",
+        "value": 10
+       },
+       "entryPx": "1361.021",
+       "positionValue": "4544753.7599999998",
+       "liquidationPx": "2916.7695575784"
+      }
+     }
+    ],
+    "time": 1792362948516
+   }
+  },
+  {
+   "request": {
+    "type": "metaAndAssetCtxs"
+   },
+   "response": [
+    {
+     "universe": [
+      {
+       "szDecimals": 5,
+       "name": "BTC",
+       "maxLeverage": 40,
+       "marginTableId": 56
+      },
+      {
+       "szDecimals": 4,
+       "name": "ETH",
+       "maxLeverage": 25,
+       "marginTableId": 55
+      },
+      {
+       "szDecimals": 2,
+       "name": "SOL",
+       "maxLeverage": 20,
+       "marginTableId": 54
+      },
+      {
+       "szDecimals": 2,
+       "name": "HYPE",
+       "maxLeverage": 10,
+       "marginTableId": 52
+      },
+      {
+       "szDecimals": 0,
+       "name": "LIT",
+       "maxLeverage": 5,
+       "marginTableId": 5
+      }
+     ],
+     "marginTables": [
+      [
+       52,
+       {
+        "description": "tiered 10x (2)",
+        "marginTiers": [
+         {
+          "lowerBound": "0.0",
+          "maxLeverage": 10
+         },
+         {
+          "lowerBound": "20000000.0",
+          "maxLeverage": 5
+         }
+        ]
+       }
+      ],
+      [
+       54,
+       {
+        "description": "tiered 20x (2)",
+        "marginTiers": [
+         {
+          "lowerBound": "0.0",
+          "maxLeverage": 20
+         },
+         {
+          "lowerBound": "70000000.0",
+          "maxLeverage": 10
+         }
+        ]
+       }
+      ],
+      [
+       55,
+       {
+        "description": "tiered 25x",
+        "marginTiers": [
+         {
+          "lowerBound": "0.0",
+          "maxLeverage": 25
+         },
+         {
+          "lowerBound": "100000000.0",
+          "maxLeverage": 15
+         }
+        ]
+       }
+      ],
+      [
+       56,
+       {
+        "description": "tiered 40x",
+        "marginTiers": [
+         {
+          "lowerBound": "0.0",
+          "maxLeverage": 40
+         },
+         {
+          "lowerBound": "150000000.0",
+          "maxLeverage": 20
+         }
+        ]
+       }
+      ]
+     ]
+    },
+    [
+     {
+      "funding": "0.0000095729",
+      "openInterest": "39570.69254",
+      "prevDayPx": "81377.0",
+      "dayNtlVlm": "1749953140.1950600147",
+      "premium": "-0.0004469287",
+      "oraclePx": "81668.5",
+      "markPx": "81620.0",
+      "midPx": "81631.5",
+      "impactPxs": [
+       "81631.0",
+       "81632.0"
+      ],
+      "dayBaseVlm": "21513.8054"
+     },
+     {
+      "funding": "-0.0000002499",
+      "openInterest": "1077491.8427999998",
+      "prevDayPx": "2395.0",
+      "dayNtlVlm": "933941893.5234497786",
+      "premium": "-0.0004600586",
+      "oraclePx": "2391.0",
+      "markPx": "2389.2",
+      "midPx": "2389.85",
+      "impactPxs": [
+       "2389.8",
+       "2389.9"
+      ],
+      "dayBaseVlm": "393249.9679"
+     },
+     {
+      "funding": "0.0000125",
+      "openInterest": "5490071.7000000002",
+      "prevDayPx": "103.05",
+      "dayNtlVlm": "140070224.0744000077",
+      "premium": "-0.0003286485",
+      "oraclePx": "103.454",
+      "markPx": "103.38",
+      "midPx": "103.415",
+      "impactPxs": [
+       "103.41",
+       "103.42"
+      ],
+      "dayBaseVlm": "1367142.45"
+     },
+     {
+      "funding": "0.0000125",
+      "openInterest": "19927841.1399999931",
+      "prevDayPx": "78.099",
+      "dayNtlVlm": "253131470.1421200037",
+      "premium": "-0.0000038351",
+      "oraclePx": "78.225",
+      "markPx": "78.194",
+      "midPx": "78.222",
+      "impactPxs": [
+       "78.2204",
+       "78.2247"
+      ],
+      "dayBaseVlm": "3257191.0900000008"
+     },
+     {
+      "funding": "-0.00000846",
+      "openInterest": "40760472.0",
+      "prevDayPx": "3.1318",
+      "dayNtlVlm": "16461246.9174000006",
+      "premium": "-0.0014962569",
+      "oraclePx": "3.0456",
+      "markPx": "3.041318",
+      "midPx": "3.04045",
+      "impactPxs": [
+       "3.039719",
+       "3.041043"
+      ],
+      "dayBaseVlm": "5550861.0"
+     }
+    ]
+   ]
+  },
+  {
+   "request": {
+    "type": "allMids"
+   },
+   "response": {
+    "BTC": "81601.5",
+    "ETH": "2388.75",
+    "HYPE": "78.1775",
+    "LIT": "3.04035",
+    "SOL": "103.345"
+   }
+  }
+ ]
+}
