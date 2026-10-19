@@ -1,6 +1,6 @@
 {
   "name": "@mutexa/mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Read-only MCP server for liquidation exposure: Hyperliquid markets and positions, liquidation prices, slice and loan ladders, Aave V3 reserves, linkability scores, tracker views and liquidation maps, from public data with no API key.",
   "license": "MIT",
   "type": "module",
@@ -55,9 +55,9 @@
     "@mutexa/ladder": "github:mutexa-labs/liquidation-ladder#v0.1.0",
     "@mutexa/linkability": "github:mutexa-labs/linkability#v0.1.0",
     "@mutexa/liq-math": "github:mutexa-labs/liq-math#v0.1.0",
-    "@mutexa/liquidation-map": "github:mutexa-labs/liquidation-map#v0.1.0",
-    "@mutexa/tracker-view": "github:mutexa-labs/tracker-view#v0.1.0",
-    "@mutexa/venue-adapters": "github:mutexa-labs/venue-adapters#v0.1.0",
+    "@mutexa/liquidation-map": "github:mutexa-labs/liquidation-map#v0.1.1",
+    "@mutexa/tracker-view": "github:mutexa-labs/tracker-view#v0.1.2",
+    "@mutexa/venue-adapters": "github:mutexa-labs/venue-adapters#v0.1.1",
     "zod": "^4.6.5"
   },
   "devDependencies": {

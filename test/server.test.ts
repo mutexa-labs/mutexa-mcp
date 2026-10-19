@@ -4,6 +4,7 @@ import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
 import { liqPrice, tiersFor } from "@mutexa/liq-math";
 import { afterEach, describe, expect, it } from "vitest";
 import { createServer, SERVER_INSTRUCTIONS, type ServerOptions } from "../src/index";
+import { VERSION } from "../src/version";
 import { aaveSnapshot, fakeFetch, hl, leaderboard } from "./helpers/fixtures";
 
 const NOW = Date.parse("2026-10-18T00:00:00Z");
@@ -61,7 +62,7 @@ describe("mutexa MCP server", () => {
       expect(t.description!.length).toBeGreaterThan(80);
     }
     expect(c.getInstructions()).toBe(SERVER_INSTRUCTIONS);
-    expect(c.getServerVersion()).toMatchObject({ name: "mutexa", version: "0.1.0" });
+    expect(c.getServerVersion()).toMatchObject({ name: "mutexa", version: VERSION });
   });
 
   it("keeps the tool schemas stable", async () => {

@@ -4,8 +4,10 @@ blockExoticSubdeps: false
 allowBuilds:
   esbuild: true
   "@mutexa/ladder@git+https://github.com/mutexa-labs/liquidation-ladder.git#6259f4b70ab38c77fd000ae16eaf5527f9e1a0a5": true
+  "@mutexa/ladder@https://codeload.github.com/mutexa-labs/liquidation-ladder/tar.gz/6259f4b70ab38c77fd000ae16eaf5527f9e1a0a5": true
   "@mutexa/linkability@git+https://github.com/mutexa-labs/linkability.git#00cc74de47bf745246a645a402906facf6e689ff": true
   "@mutexa/liq-math@git+https://github.com/mutexa-labs/liq-math.git#05aa981d69192d4ff6da201b98b2dcdc7388fc87": true
-  "@mutexa/liquidation-map@git+https://github.com/mutexa-labs/liquidation-map.git#85ed455fc677e04e08850e0f5d64441fe0ada766": true
-  "@mutexa/tracker-view@git+https://github.com/mutexa-labs/tracker-view.git#795b41c29b23b9e7af0506ecb1dc267c0f2613f4": true
-  "@mutexa/venue-adapters@git+https://github.com/mutexa-labs/venue-adapters.git#0bf13dfc5249d0fefd8d06b011dd5817dc5a6fe3": true
+  "@mutexa/liq-math@https://codeload.github.com/mutexa-labs/liq-math/tar.gz/05aa981d69192d4ff6da201b98b2dcdc7388fc87": true
+  "@mutexa/liquidation-map@https://codeload.github.com/mutexa-labs/liquidation-map/tar.gz/52f0b720d82bc51cd082d9af9ede89cc41396c63": true
+  "@mutexa/tracker-view@https://codeload.github.com/mutexa-labs/tracker-view/tar.gz/ad014a19e35b5aa2d973faebb1298d3215f222c7": true
+  "@mutexa/venue-adapters@https://codeload.github.com/mutexa-labs/venue-adapters/tar.gz/bce57f07ecb5fb0f5abd645ee1dbb4afdaa3c393": true
