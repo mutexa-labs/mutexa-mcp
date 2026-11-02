@@ -51,7 +51,7 @@
     "start": "node dist/cli.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.32.1",
+    "@modelcontextprotocol/sdk": "^1.32.2",
     "@mutexa/ladder": "github:mutexa-labs/liquidation-ladder#v0.1.0",
     "@mutexa/linkability": "github:mutexa-labs/linkability#v0.1.0",
     "@mutexa/liq-math": "github:mutexa-labs/liq-math#v0.1.0",
